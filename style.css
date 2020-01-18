@@ -9,11 +9,10 @@
 .jumbotron{
     background-color:beige;
     border: solid 2px black;
-    margin: 10rem 5rem;
+    margin: 10rem 15rem;
     justify-content: center;
     flex-direction: column;
     display: flex;
-    width: fit-content;
 }
 
  h2{   
