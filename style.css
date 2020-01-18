@@ -1,0 +1,21 @@
+.footer{
+    background-color: #666666;
+    text-align: center;
+    padding: 25px;
+    border-top: 12px solid #4aaaa5;
+    color:white;
+}
+.jumbotron{
+    background-color:beige;
+    border: solid 1px #dddddd;
+    margin: 10rem 10rem;
+    justify-content: center;
+    display: block;
+}
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+#password, #copy{
+    margin: 0px 8px;
+}
