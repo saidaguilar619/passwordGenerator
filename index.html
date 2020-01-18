@@ -12,29 +12,28 @@
   </head>
   <body>
     <div class="mainContainer">
-    <div class="jumbotron">
         <header>
-          <h1>Password Generator</h1>
+          <h1 id ="main">Password Generator</h1>
         </header>
-        <hr>
+      <div class="jumbotron">
         <h2>Generate a Password</h2>
-
+         <button id="generate">Click to Generate Password</button>
         <textarea
           readonly
           id="password"
           placeholder="Your Secure Password"
           aria-label="Generated Password" rows="5" cols="25"
         ></textarea>
-        <button id="generate">Generate Password</button>
+       
         <button id="copy">
-          Copy to Clipboard
+          Click to Copy to Clipboard
         </button>
      </div>
-   
+     </div>
     <div class="footer fixed-bottom">     
       <p>Copyright	&#x24B8</p>  
     </div>
-   </div>
+  
    <script src="script.js"></script>
  </body>
 </html>

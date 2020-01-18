@@ -1,22 +1,52 @@
 .footer{
-    background-color: #666666;
+    background-color:burlywood;
     text-align: center;
     padding: 25px;
-    border-top: 12px solid #4aaaa5;
-    color:white;
+    border-top: 12px solid beige;
+    font-size: 20px;
 }
+
 .jumbotron{
     background-color:beige;
-    border: solid 1px #dddddd;
-    margin: 10rem 10rem;
+    border: solid 2px black;
+    margin: 10rem 5rem;
     justify-content: center;
-    display: block;
+    flex-direction: column;
+    display: flex;
+    width: fit-content;
 }
-h1, h2{
+
+ h2{   
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 34
-    px;
+    font-size: 34 px;
 }
+
 #password, #copy{
     margin: 0px 8px;
+}
+
+.mainContainer{
+    text-align: center;
+}
+
+#main{
+    margin: 10px;
+    background-color: burlywood;
+    padding: 15px;
+}
+#generate{
+    margin: 10px;
+    border-color: solid 1px black;
+    font-size: large;
+    padding: 15px;
+}
+#copy{
+    margin: 10px;
+    border-color: solid 1px black;
+    font-size: large;
+    padding: 15px;
+}
+#password{
+    font-size: 20px;
+    text-align: center;
 }
