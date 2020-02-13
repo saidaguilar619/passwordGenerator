@@ -1,23 +1,38 @@
+body{
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71eqoUCHn7L._AC_SL1000_.jpg");
+
+}
+
 .footer{
     background-color:burlywood;
     text-align: center;
-    padding: 25px;
-    border-top: 12px solid beige;
-    font-size: 20px;
+    padding: 10px;
+    border-top: 8px solid black;
+    font-size: .5em;
+
+}
+
+.fixed-top{
+    background-color: burlywood;
+    padding: 10px;
+    border-bottom: 8px solid black;
+    font-size: 1.2em;
+}
+
+.gPass{
+    font-size: 1.2em;
 }
 
 .jumbotron{
     background-color:beige;
-    border: solid 2px black;
-    margin: 10rem 15rem;
+    border: solid 5px black;
+    margin: 10rem 30rem;
     justify-content: center;
     flex-direction: column;
     display: flex;
-}
-
- h2{   
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 34 px;
+    max-width: 50vw;
 }
 
 #password, #copy{
@@ -26,26 +41,22 @@
 
 .mainContainer{
     text-align: center;
+    /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/71eqoUCHn7L._AC_SL1000_.jpg"); */
 }
 
-#main{
-    margin: 10px;
-    background-color: burlywood;
-    padding: 15px;
-}
+
 #generate{
     margin: 10px;
     border-color: solid 1px black;
-    font-size: large;
     padding: 15px;
 }
+
 #copy{
     margin: 10px;
     border-color: solid 1px black;
-    font-size: large;
     padding: 15px;
 }
+
 #password{
-    font-size: 20px;
     text-align: center;
 }

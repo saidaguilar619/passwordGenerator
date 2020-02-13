@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Anton|Kanit|Rubik|Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
 
-    <title>Password Generator</title>
-  </head>
-  <body>
-    <div class="mainContainer">
-        <header>
-          <h1 id ="main">Password Generator</h1>
-        </header>
-      <div class="jumbotron">
-        <h2>Generate a Password</h2>
-         <button id="generate">Click to Generate Password</button>
-        <textarea
-          readonly
-          id="password"
-          placeholder="Your Secure Password"
-          aria-label="Generated Password" rows="5" cols="25"
-        ></textarea>
-       
-        <button id="copy">
-          Click to Copy to Clipboard
-        </button>
-     </div>
-     </div>
-    <div class="footer fixed-bottom">     
-      <p>Copyright	&#x24B8</p>  
+<body>
+  <div class="mainContainer">
+    <div class="fixed-top"> Password Generator </div>
+    <div class="jumbotron">
+      <h1 class="gPass">Generate New Password</h1>
+      <button id="generate">Click to Generate Password</button>
+      <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" rows="2"
+        cols="25"></textarea>
+      <button id="copy">
+        Click to Copy to Clipboard
+      </button>
     </div>
-  
-   <script src="script.js"></script>
- </body>
+    <div class="footer fixed-bottom">
+      <p>Copyright &#x24B8</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
