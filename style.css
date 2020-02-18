@@ -8,14 +8,14 @@ body{
     background-color:burlywood;
     text-align: center;
     padding: 10px;
-    border-top: 8px solid black;
+    border: 8px solid black;
     font-size: .5em;
 }
 
 .fixed-tops{
     background-color: burlywood;
     padding: 10px;
-    border-bottom: 8px solid black;
+    border: 8px solid black;
     font-size: 1.2em;
     text-align: center;
 }
