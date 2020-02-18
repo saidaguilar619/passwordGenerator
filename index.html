@@ -12,22 +12,64 @@
 </head>
 
 <body>
-  <div class="mainContainer">
-    <div class="fixed-top"> Password Generator </div>
-    <div class="jumbotron">
-      <h1 class="gPass">Generate New Password</h1>
-      <button id="generate">Click to Generate Password</button>
-      <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" rows="2"
-        cols="25"></textarea>
-      <button id="copy">
-        Click to Copy to Clipboard
-      </button>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="fixed-tops"> Password Generator </div>
+      </div>
     </div>
-    <div class="footer fixed-bottom">
-      <p>Copyright &#x24B8</p>
+    <div class="row">
+      <div class="col-lg-1"> </div>
+      <div class="col-lg-10">
+        <div class="jumbotron">
+          <h1 class="gPass">Generate New Password</h1>
+
+          <h2>(Please check specifications)</h2>
+
+          <div class="custom-control custom-checkbox ">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">-Lowercase</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">-Uppercase</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck3">
+            <label class="custom-control-label" for="customCheck3">-Numbers</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck4">
+            <label class="custom-control-label" for="customCheck4">-Symbols</label>
+          </div>
+
+          <h1>-Password Length</h1>
+          <h1 id="custom1"></h1>
+          <input type="range" min="8" max="128" value="80" class="custom-range" id="customRange1">
+          <h4>(move slider for length)</h4>
+          <button id="generate">Click to Generate Password</button>
+
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" rows="2"
+            cols="25"></textarea>
+
+          <button id="copy">
+            Click to Copy to Clipboard
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer fixed-bottoms">
+          <p>Copyright &#x24B8</p>
+        </div>
+      </div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 

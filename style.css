@@ -2,7 +2,6 @@ body{
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/71eqoUCHn7L._AC_SL1000_.jpg");
-
 }
 
 .footer{
@@ -11,14 +10,14 @@ body{
     padding: 10px;
     border-top: 8px solid black;
     font-size: .5em;
-
 }
 
-.fixed-top{
+.fixed-tops{
     background-color: burlywood;
     padding: 10px;
     border-bottom: 8px solid black;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .gPass{
@@ -28,35 +27,50 @@ body{
 .jumbotron{
     background-color:beige;
     border: solid 5px black;
-    margin: 10rem 30rem;
+    margin: 3rem;
     justify-content: center;
     flex-direction: column;
     display: flex;
-    max-width: 50vw;
+    max-width: 60vw;
+    min-width: 275px;
+    padding: 5px;
 }
 
 #password, #copy{
     margin: 0px 8px;
 }
 
-.mainContainer{
+.container{
     text-align: center;
-    /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/71eqoUCHn7L._AC_SL1000_.jpg"); */
+    padding: 0px;
+    width: 100%;
 }
-
-
+ 
 #generate{
     margin: 10px;
     border-color: solid 1px black;
-    padding: 15px;
+    padding: 3px;
 }
 
 #copy{
     margin: 10px;
     border-color: solid 1px black;
-    padding: 15px;
+    padding: 3px;
 }
 
 #password{
     text-align: center;
+}
+.custom-range{
+    width: 96%;
+}
+
+.custom-range::before{
+    content: "8";
+    color: black;
+}
+
+.custom-range::after{
+    content: "128";
+    color: black;
 }

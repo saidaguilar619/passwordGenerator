@@ -2,34 +2,17 @@ var passwordEL = document.getElementById("password");
 var passTest = false;
 var resultsArr = [false, false, false, false];
 
-function checkLength() {
-    do {
-        var passLength = prompt("How many characters would you like in your password?");
-        if (parseInt(passLength) < 128 && parseInt(passLength) > 7) {
-            passTest = true;
-        } else {
-            alert("please enter a value between 8 and 128");
-        }
-    } while (passTest === false);
-    return passLength;
-}
-
 function askUser() {
-    var lowCase = confirm("Would you like lower case charaters?");
-    var upCase = confirm("Would you like uppper case charaters?");
-    var numChecked = confirm("Would you like to use numbers?");
-    var symbolsChecked = confirm("Would you like to use symbol charaters?");
-
-    if (lowCase) {
+    if (document.getElementById("customCheck1").checked) {
         resultsArr[0] = true;
     }
-    if (upCase) {
+    if (document.getElementById("customCheck2").checked) {
         resultsArr[1] = true;
     }
-    if (numChecked) {
+    if (document.getElementById("customCheck3").checked) {
         resultsArr[2] = true;
     }
-    if (symbolsChecked) {
+    if (document.getElementById("customCheck4").checked) {
         resultsArr[3] = true;
     }
 }
@@ -61,12 +44,15 @@ function genPassword(checkArr, pWordLength) {
     } while (i < pWordLength)
     passwordEL.textContent = newPassword;
 }
+document.getElementById("customRange1").oninput = function(){
+    document.getElementById("custom1").innerHTML = this.value;
+};
 
 document.querySelector('#generate').addEventListener("click", function (event) {
     event.preventDefault();
     resultsArr = [false, false, false, false];
 
-    var pwLength = checkLength();
+    var pwLength = document.getElementById("customRange1").value;
     askUser();
     genPassword(resultsArr, pwLength);
 })
